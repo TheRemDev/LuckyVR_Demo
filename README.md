@@ -1,1 +1,3 @@
 # LuckyVR_Demo
+
+This is my demo for a cool job at LuckyVR, wish me luck...
