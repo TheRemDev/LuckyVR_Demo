@@ -43,10 +43,12 @@ public class CreateJoinRoomScreen : MonoBehaviour
 
     public void OnCreateRoomButtonPressed()
     {
-        UIManager.Instance.SwapScreen(2);
+        NetworkManager.Instance.CreateRoom(m_createRoomInputField.text);
+        UIManager.Instance.SwapScreen(3);
     }
     public void OnJoinRoomButtonPressed()
     {
-        UIManager.Instance.SwapScreen(2);
+        NetworkManager.Instance.JoinRoom(m_joinRoomInputField.text);
+        UIManager.Instance.SwapScreen(3);
     }
 }

@@ -56,4 +56,9 @@ public class UIManager : MonoBehaviour
         m_allScreens[screenIndex].gameObject.SetActive(true);
         CurrentScreenIndex = screenIndex;
     }
+
+    public GameObject GetScreen(int requiredScreenIndex)
+    {
+        return m_allScreens[requiredScreenIndex].gameObject;
+    }
 }

@@ -29,7 +29,8 @@ public class CreatePlayerScreen : MonoBehaviour
     public void OnOkButtonPressed()
     {
         //FindObjectOfType<Player>().SetPlayerName(m_playerNameInputField.text);
-        UIManager.Instance.SwapScreen(1);
+        FindObjectOfType<DataManager>().playerName = m_playerNameInputField.text;
+        UIManager.Instance.SwapScreen(2);
     }
 
 }
